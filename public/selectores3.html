@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selectores 3</title>
+  <style>
+    p {
+      color: aqua;
+      font-size: 3rem;
+    }
+    p::first-letter {
+      color: black;
+    }
+    p:hover::after{
+      content:"🥺";
+    }
+    p:hover {
+      /* transform: scale(09); */
+      color: aqua;
+      background: red;
+      cursor: pointer;
+    }
+    div p:nth-child(2) {
+      color: violet;
+    }
+    input::placeholder{
+      color: tomato;
+    }
+  </style>
+</head>
+<body>
+  <p>Hola</p>
+  <div>
+    <p>Platzi</p>
+    <p>Master</p>
+    <p>Lo mejor</p>
+  </div>
+  <input type="text" placeholder="Name">
+</body>
+</html>
